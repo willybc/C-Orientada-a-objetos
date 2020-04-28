@@ -6,18 +6,27 @@ namespace Prueba1
 	{
 		static void Main(string[] args)
 		{
-			
 
-			Person persona1 = new Person();
-			persona1.Name = "Maria";
-			persona1.Age = 21;
+			Rectangle rectangle1 = new Rectangle();
+			rectangle1.basis = 3;
+			rectangle1.height = 7;
 
-			Person persona2 = new Person();
-			persona2.Name = "Antonio";
-			persona2.Age = 22;
+			//rectangle1.Grow(10);
 
-			Console.WriteLine($"persona 1 se llama {persona1.Name} y tiene {persona1.Age} años");
-			Console.WriteLine($"persona 2 se llama {persona2.Name} y tiene {persona2.Age} años");
+			Console.WriteLine(rectangle1.Area()); //Area
+			Console.WriteLine(rectangle1.Perimetro()); //Perimetro
+
+
+			Rectangle rectangle2 = new Rectangle();
+			rectangle2.basis = 1.5;
+			rectangle2.height = 4;
+
+			Console.WriteLine(rectangle2.Area());   //Area
+			Console.WriteLine(rectangle2.Perimetro()); //Perimetro
+
+			Console.WriteLine(rectangle1.Compare(rectangle2)); //Comparacion y resto del area
+
+
 
 			Console.ReadKey();
 
